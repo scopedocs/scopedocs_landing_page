@@ -1,0 +1,1 @@
+export { FormatStrokeWeightThin } from "./FormatStrokeWeightThin";

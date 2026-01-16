@@ -1,0 +1,57 @@
+export const FormatStrokeWeightRegular7 = ({ className }) => {
+  return (
+    <svg
+      className={`format-stroke-weight-regular-7 ${className}`}
+      fill="none"
+      height="32"
+      viewBox="0 0 32 32"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        className="path"
+        d="M10 21V18C10 17.4696 10.2107 16.9609 10.5858 16.5858C10.9609 16.2107 11.4696 16 12 16H23C23.5304 16 24.0391 15.7893 24.4142 15.4142C24.7893 15.0391 25 14.5304 25 14V11"
+        stroke="#343330"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+
+      <path
+        className="path"
+        d="M10 11V21"
+        stroke="#343330"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+
+      <path
+        className="path"
+        d="M10 11C11.6569 11 13 9.65685 13 8C13 6.34315 11.6569 5 10 5C8.34315 5 7 6.34315 7 8C7 9.65685 8.34315 11 10 11Z"
+        stroke="#343330"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+
+      <path
+        className="path"
+        d="M25 11C26.6569 11 28 9.65685 28 8C28 6.34315 26.6569 5 25 5C23.3431 5 22 6.34315 22 8C22 9.65685 23.3431 11 25 11Z"
+        stroke="#343330"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+
+      <path
+        className="path"
+        d="M10 27C11.6569 27 13 25.6569 13 24C13 22.3431 11.6569 21 10 21C8.34315 21 7 22.3431 7 24C7 25.6569 8.34315 27 10 27Z"
+        stroke="#343330"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+};

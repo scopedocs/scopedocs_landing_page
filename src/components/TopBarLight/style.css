@@ -1,0 +1,52 @@
+.top-bar-light {
+  height: 41px;
+  width: 1440px;
+}
+
+.top-bar-light .icon {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  height: 29.27%;
+  position: relative;
+  top: 34.15%;
+  width: 3.61%;
+}
+
+.top-bar-light .ellipse {
+  background-color: #ff5e5d;
+  border: 0.5px solid;
+  border-color: #e14942;
+  border-radius: 6px;
+  height: 12px;
+  position: relative;
+  width: 12px;
+}
+
+.top-bar-light .ellipse-2 {
+  background-color: #ffbc4f;
+  border: 0.5px solid;
+  border-color: #e1a325;
+  border-radius: 6px;
+  height: 12px;
+  position: relative;
+  width: 12px;
+}
+
+.top-bar-light .ellipse-3 {
+  background-color: #22cb58;
+  border: 0.5px solid;
+  border-color: #3eaf3f;
+  border-radius: 6px;
+  height: 12px;
+  position: relative;
+  width: 12px;
+}
+
+.top-bar-light.light {
+  background-color: #dee1e6;
+}
+
+.top-bar-light.dark {
+  background-color: #202124;
+}

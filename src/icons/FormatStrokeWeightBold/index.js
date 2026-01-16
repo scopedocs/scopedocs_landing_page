@@ -1,0 +1,1 @@
+export { FormatStrokeWeightBold } from "./FormatStrokeWeightBold";

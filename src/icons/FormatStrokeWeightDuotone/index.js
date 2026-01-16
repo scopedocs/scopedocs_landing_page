@@ -1,0 +1,1 @@
+export { FormatStrokeWeightDuotone } from "./FormatStrokeWeightDuotone";

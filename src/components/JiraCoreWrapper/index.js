@@ -1,0 +1,1 @@
+export { JiraCoreWrapper } from "./JiraCoreWrapper";

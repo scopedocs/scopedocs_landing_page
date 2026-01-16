@@ -1,0 +1,85 @@
+.logo {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  position: relative;
+  top: 20px;
+}
+
+.logo .div-2 {
+  position: relative;
+}
+
+.logo .group {
+  height: 37px;
+  margin-right: -2.00px;
+  position: relative;
+  width: 123px;
+}
+
+.logo .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Figtree", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  left: 38px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.logo .group-2 {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30.24%;
+}
+
+.logo .fill {
+  height: 33.61%;
+  left: 16.66%;
+  position: absolute;
+  top: 49.64%;
+  width: 33.42%;
+}
+
+.logo .fill-2 {
+  height: 33.61%;
+  left: 49.91%;
+  position: absolute;
+  top: 16.75%;
+  width: 33.42%;
+}
+
+.logo .fill-3 {
+  height: 55.11%;
+  left: 22.17%;
+  position: absolute;
+  top: 33.41%;
+  width: 54.82%;
+}
+
+.logo.white {
+  left: 175px;
+}
+
+.logo.colored {
+  left: 20px;
+}
+
+.logo.white .div-2 {
+  height: 37px;
+  margin-right: -2.00px;
+  width: 123px;
+}
+
+.logo.colored .div-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}

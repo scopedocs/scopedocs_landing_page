@@ -1,0 +1,152 @@
+.navbar {
+  align-items: center;
+  background-color: var(--neutral-500);
+  display: flex;
+  justify-content: space-between;
+  left: 120px;
+  padding: 40px 80px;
+  position: relative;
+  top: 677px;
+  width: 1551px;
+}
+
+.navbar .logo-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.navbar .logo-2 {
+  flex: 0 0 auto !important;
+  left: unset !important;
+  top: unset !important;
+}
+
+.navbar .nav-link {
+  align-items: flex-start;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 1;
+  gap: 40px;
+  justify-content: center;
+  margin-left: 30px;
+  position: relative;
+}
+
+.navbar .menu {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .text-9 {
+  color: var(--basewhite);
+  font-family: var(--body-large-medium-font-family);
+  font-size: var(--body-large-medium-font-size);
+  font-style: var(--body-large-medium-font-style);
+  font-weight: var(--body-large-medium-font-weight);
+  letter-spacing: var(--body-large-medium-letter-spacing);
+  line-height: var(--body-large-medium-line-height);
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  transition: color 200ms ease-out;
+}
+
+/* Animated underline using ::after pseudo-element */
+.navbar .menu .text-9::after,
+.navbar .div-wrapper .text-9::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--basewhite);
+  transition: width 200ms ease-out;
+  transform-origin: left;
+}
+
+/* Hover state: animate underline and subtle color shift */
+.navbar .menu:hover .text-9,
+.navbar .div-wrapper:hover .text-9 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar .menu:hover .text-9::after,
+.navbar .div-wrapper:hover .text-9::after {
+  width: 100%;
+}
+
+/* Focus-visible state for keyboard navigation */
+.navbar .menu:focus-visible .text-9,
+.navbar .div-wrapper:focus-visible .text-9 {
+  color: rgba(255, 255, 255, 0.95);
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.navbar .menu:focus-visible .text-9::after,
+.navbar .div-wrapper:focus-visible .text-9::after {
+  width: 100%;
+}
+
+/* Active/current page state - persistent underline */
+.navbar .menu.active .text-9::after,
+.navbar .div-wrapper.active .text-9::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar .menu.active .text-9,
+.navbar .div-wrapper.active .text-9 {
+  color: var(--basewhite);
+}
+
+.navbar .div-wrapper {
+  align-items: center;
+  border-radius: 20px;
+  display: none;
+  gap: 8px;
+  justify-content: center;
+  position: relative;
+  width: 61px;
+  cursor: pointer;
+}
+
+.navbar .button-instance {
+  margin-bottom: -2.00px !important;
+  margin-top: -4.00px !important;
+  text-align: unset !important;
+}
+
+/* Responsive: Reduced animation on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .navbar .menu .text-9::after,
+  .navbar .div-wrapper .text-9::after {
+    transition: width 150ms ease-out;
+  }
+
+  .navbar .text-9 {
+    transition: color 150ms ease-out;
+  }
+
+  /* Immediate feedback on touch */
+  .navbar .menu:active .text-9,
+  .navbar .div-wrapper:active .text-9 {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .navbar .menu:active .text-9::after,
+  .navbar .div-wrapper:active .text-9::after {
+    width: 100%;
+  }
+}

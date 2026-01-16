@@ -1,0 +1,1 @@
+export { FormatStrokeWeightLight } from "./FormatStrokeWeightLight";

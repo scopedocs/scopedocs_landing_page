@@ -1,0 +1,229 @@
+.accordion {
+  align-items: flex-start;
+  background-color: #0f0f0f;
+  border: 1px solid;
+  border-color: #3b3b3b3d;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 20px;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+  width: 730px;
+}
+
+.accordion .headline-icon {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.accordion .headline {
+  color: var(--basewhite);
+  flex: 1;
+  font-family: var(--headline-headline-4-medium-font-family);
+  font-size: var(--headline-headline-4-medium-font-size);
+  font-style: var(--headline-headline-4-medium-font-style);
+  font-weight: var(--headline-headline-4-medium-font-weight);
+  letter-spacing: var(--headline-headline-4-medium-letter-spacing);
+  line-height: var(--headline-headline-4-medium-line-height);
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.accordion .icon-caret-up {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.accordion .vector-12 {
+  left: 15.62%;
+  position: absolute;
+  top: 28.12%;
+  width: 68.75%;
+}
+
+.accordion .description {
+  align-self: stretch;
+  color: var(--neutral-100);
+  font-family: var(--body-extra-large-regular-font-family);
+  font-size: var(--body-extra-large-regular-font-size);
+  font-style: var(--body-extra-large-regular-font-style);
+  font-weight: var(--body-extra-large-regular-font-weight);
+  letter-spacing: var(--body-extra-large-regular-letter-spacing);
+  line-height: var(--body-extra-large-regular-line-height);
+  position: relative;
+}
+
+.accordion.variant-8 {
+  height: 170px;
+  top: 973px;
+}
+
+.accordion.variant-10 {
+  height: 170px;
+  top: 1259px;
+}
+
+.accordion.version-1 {
+  height: 95px;
+  top: 20px;
+}
+
+.accordion.variant-11 {
+  height: 103px;
+  top: 1450px;
+}
+
+.accordion.variant-2 {
+  height: 170px;
+  top: 115px;
+}
+
+.accordion.variant-4 {
+  height: 170px;
+  top: 401px;
+}
+
+.accordion.variant-9 {
+  height: 74px;
+  top: 1164px;
+}
+
+.accordion.variant-3 {
+  height: 101px;
+  top: 306px;
+}
+
+.accordion.variant-5 {
+  height: 109px;
+  top: 592px;
+}
+
+.accordion.variant-6 {
+  height: 170px;
+  top: 687px;
+}
+
+.accordion.variant-12 {
+  height: 170px;
+  top: 1545px;
+}
+
+.accordion.variant-7 {
+  height: 101px;
+  top: 878px;
+}
+
+.accordion.variant-9 .headline-icon {
+  margin-bottom: -8.00px;
+}
+
+.accordion.version-1 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-11 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-9 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-3 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-5 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-7 .icon-caret-up {
+  transform: rotate(180deg);
+}
+
+.accordion.variant-8 .vector-12 {
+  height: 37.50%;
+}
+
+.accordion.variant-10 .vector-12 {
+  height: 37.50%;
+}
+
+.accordion.version-1 .vector-12 {
+  height: 37.51%;
+  transform: rotate(-180deg);
+}
+
+.accordion.variant-11 .vector-12 {
+  height: 37.50%;
+  transform: rotate(-180deg);
+}
+
+.accordion.variant-2 .vector-12 {
+  height: 37.51%;
+}
+
+.accordion.variant-4 .vector-12 {
+  height: 37.50%;
+}
+
+.accordion.variant-9 .vector-12 {
+  height: 37.50%;
+  transform: rotate(-180deg);
+}
+
+.accordion.variant-3 .vector-12 {
+  height: 37.50%;
+  transform: rotate(-180deg);
+}
+
+.accordion.variant-5 .vector-12 {
+  height: 37.50%;
+  transform: rotate(-180deg);
+}
+
+.accordion.variant-6 .vector-12 {
+  height: 37.50%;
+}
+
+.accordion.variant-12 .vector-12 {
+  height: 37.50%;
+}
+
+.accordion.variant-7 .vector-12 {
+  height: 37.50%;
+  transform: rotate(-180deg);
+}
+
+.accordion.version-1 .description {
+  margin-bottom: -24.00px;
+}
+
+.accordion.variant-11 .description {
+  margin-bottom: -24.00px;
+}
+
+.accordion.variant-9 .description {
+  margin-bottom: -24.00px;
+}
+
+.accordion.variant-3 .description {
+  margin-bottom: -24.00px;
+}
+
+.accordion.variant-5 .description {
+  margin-bottom: -24.00px;
+}
+
+.accordion.variant-7 .description {
+  margin-bottom: -24.00px;
+}

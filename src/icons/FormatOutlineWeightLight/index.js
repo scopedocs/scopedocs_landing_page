@@ -1,0 +1,1 @@
+export { FormatOutlineWeightLight } from "./FormatOutlineWeightLight";

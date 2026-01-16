@@ -1,0 +1,1 @@
+export { FormatOutlineWeightBold } from "./FormatOutlineWeightBold";
