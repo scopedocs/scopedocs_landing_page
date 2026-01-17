@@ -3,12 +3,14 @@
   align-items: center;
   border-radius: 9999px;
   box-sizing: border-box;
+  cursor: pointer;
   display: inline-flex;
   gap: 8px;
   justify-content: center;
   overflow: hidden;
   padding: 12px 32px;
   position: relative;
+  text-decoration: none;
 }
 
 .button .text-5 {

@@ -65,6 +65,7 @@ export const Navbar = ({
         text={buttonText}
         textClassName="button-instance"
         type="secondary"
+        href={buttonText === "Book Demo" ? "https://calendar.app.google/hdAMUpqTcD2uzbHx9" : undefined}
       />
     </div>
   );

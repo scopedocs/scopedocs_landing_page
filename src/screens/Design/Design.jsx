@@ -1488,6 +1488,7 @@ export const Design = () => {
                     text="Book Demo"
                     textClassName="button-13"
                     type="secondary"
+                    href={screenWidth >= 1440 ? "https://calendar.app.google/hdAMUpqTcD2uzbHx9" : undefined}
                   />
                 </div>
 
