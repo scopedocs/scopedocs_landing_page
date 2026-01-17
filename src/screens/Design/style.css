@@ -1108,7 +1108,7 @@
   flex-direction: column;
   gap: 24px;
   height: 214px;
-  left: 37px;
+  left: 65px;
   position: absolute;
   top: 4713px;
   width: 355px;
@@ -1652,6 +1652,13 @@
   position: relative;
 }
 
+.design .frame-16 .frame-13:first-child,
+.design .frame-18 .frame-13:first-child,
+.design .frame-20 .frame-13:first-child,
+.design .frame-23 .frame-13:nth-child(2) {
+  width: 359px;
+}
+
 .design .frame-14 {
   height: 64px;
   position: relative;
@@ -1745,7 +1752,7 @@
   overflow-x: scroll;
   position: absolute;
   top: 5231px;
-  width: 439px;
+  width: 400px;
 }
 
 .design .frame-16::-webkit-scrollbar {
@@ -2434,6 +2441,15 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     max-width: 1400px;
     margin: 0 auto;
+  }
+
+  /* Remove horizontal scrolling from frame sections on desktop */
+  .design .frame-16,
+  .design .frame-18,
+  .design .frame-20,
+  .design .frame-23 {
+    overflow-x: visible !important;
+    overflow: visible !important;
   }
 }
 
