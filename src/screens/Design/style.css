@@ -577,9 +577,9 @@
   border-color: #3b3b3b3d;
   border-radius: 24px;
   height: 501px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
-  width: 100%;
+  width: 340px;
 }
 
 .design .image-2 {
@@ -611,6 +611,10 @@
   align-self: stretch !important;
   position: relative !important;
   width: 100% !important;
+}
+
+.design .container-4 .top-bar-light-instance {
+  width: 340px !important;
 }
 
 .design .top-bar-light-2 {
@@ -1085,13 +1089,13 @@
   flex-direction: column;
   left: 11px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   top: 34px;
   width: 1280px;
 }
 
 .design .software-developer-2 {
-  height: 375px;
+  height: 400px;
   left: 0;
   position: absolute;
   top: 80px;
@@ -1772,10 +1776,10 @@
 .design .element {
   aspect-ratio: 1.59;
   height: 248px;
-  left: 23px;
+  left: 24px;
   object-fit: cover;
   position: absolute;
-  top: 524px;
+  top: 597px;
   width: 394px;
 }
 
@@ -3705,5 +3709,56 @@
 
   .design .faq-accordion-list {
     max-width: 100%;
+  }
+}
+
+/* Mobile view: Hide pricing and reposition testimonials after tool icons */
+@media (max-width: 1023px) {
+  /* Hide pricing sections on mobile */
+  .design .content-groups-6,
+  .design .pricing-card,
+  .design .content-26,
+  .design .pricing-2 {
+    display: none !important;
+  }
+
+  /* Hide the spacer element */
+  .design .v {
+    display: none !important;
+  }
+
+  /* Reposition testimonials section to come after the tool icons (frame-16) */
+  /* frame-16 ends around 5331px, so place testimonials at 5450px with spacing */
+  .design .frame-9 {
+    top: 5450px !important;
+    left: -9px !important;
+  }
+
+  /* Shift "Works with the tools" section to the right on mobile */
+  .design .content-14 {
+    left: 60px !important;
+  }
+
+  /* Restore original icon size for TopBarLight in container-4 on mobile */
+  .design .container-4 .top-bar-light-instance .icon,
+  .design .container-4 .top-bar-light-2 {
+    width: 52px !important;
+    min-width: 52px !important;
+  }
+
+  /* Add gap before "Turn Work Into Living Docs" section on mobile */
+  .design .frame-7 {
+    top: 2750px !important;
+  }
+
+  /* Make task-dashboard and software-developer-2 same size as image container on mobile */
+  .design .container-4 .task-dashboard {
+    width: 340px !important;
+    height: 501px !important;
+  }
+
+  .design .container-4 .software-developer-2 {
+    width: 340px !important;
+    height: 501px !important;
   }
 }

@@ -338,7 +338,7 @@ export const Design = () => {
             : undefined,
         height:
           screenWidth >= 1024 && screenWidth < 1440 ? "8369px" : undefined,
-        minHeight: screenWidth < 1024 ? "10206px" : undefined,
+        minHeight: screenWidth < 1024 ? "9928px" : undefined,
         minWidth:
           screenWidth < 1024
             ? "440px"
@@ -437,7 +437,7 @@ export const Design = () => {
 
             <p className="text-25">
               Stay organized, prioritize tasks, and achieve your goals
-              effortlessly.
+              effortlessly
             </p>
 
             <div className="why-choose-us">
@@ -966,7 +966,7 @@ export const Design = () => {
               you already use
             </div>
             <p className="text-25">
-              Stay organized, keep context clear, and ship with confidence
+              Sync your stack in minutes, turn PRs, tickets, and threads into living docs
             </p>
           </div>
 
@@ -1777,7 +1777,7 @@ export const Design = () => {
                 you already use
               </div>
               <p className="text-25">
-                Stay organized, keep context clear, and ship with confidence
+                Sync your stack in minutes, turn PRs, tickets, and threads into living docs
               </p>
             </div>
           </div>
@@ -2084,7 +2084,7 @@ export const Design = () => {
                 you already use
               </div>
               <p className="text-25">
-                Stay organized, keep context clear, and ship with confidence
+                Sync your stack in minutes, turn PRs, tickets, and threads into living docs.
               </p>
             </div>
           </div>
@@ -3152,7 +3152,7 @@ export const Design = () => {
                 you already use
               </div>
               <p className="text-25">
-                Stay organized, keep context clear, and ship with confidence
+                Sync your stack in minutes, turn PRs, tickets, and threads into living docs
               </p>
             </div>
           </div>
