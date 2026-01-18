@@ -281,6 +281,13 @@
     border: 1px solid;
     border-color: #e5eaf11a;
     border-radius: 50px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .design .input .button-4 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 
