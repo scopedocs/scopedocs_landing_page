@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "../Button";
 import { Logo } from "../Logo";
 import "./style.css";
@@ -12,61 +13,137 @@ export const Navbar = ({
   buttonSizeNormalTypeClassName,
   buttonText = "Try Beta Version",
 }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToFeatures = () => {
+    const element = document.getElementById('smart-solutions');
+    if (element) {
+      const offset = 120;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
+  const handleMenuClick = (callback) => {
+    if (callback) callback();
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className={`navbar ${className}`}>
-      <div className="logo-wrapper">
-        <Logo
-          className="logo-2"
-          fill={logoFill1}
-          fill1={logoImg}
-          img={logoFill}
-          state="white"
-        />
-      </div>
-
-      <div className="nav-link">
-        <div className="menu">
-          <div className="text-9">About</div>
+    <>
+      <div className={`navbar ${className}`}>
+        <div className="logo-wrapper">
+          <Logo
+            className="logo-2"
+            fill={logoFill1}
+            fill1={logoImg}
+            img={logoFill}
+            state="white"
+          />
         </div>
 
-        <div className="menu" onClick={() => {
-          const element = document.getElementById('smart-solutions');
-          if (element) {
-            const offset = 120;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }
-        }}>
-          <div className="text-9">Features</div>
-        </div>
-
-        {hasMenu && (
+        <div className="nav-link">
           <div className="menu">
-            <div className="text-9">Blog</div>
+            <div className="text-9">About</div>
           </div>
-        )}
 
-        <div className={`div-wrapper ${menuClassName}`}>
-          <div className="text-9">Pricing</div>
+          <div className="menu" onClick={scrollToFeatures}>
+            <div className="text-9">Features</div>
+          </div>
+
+          {hasMenu && (
+            <div className="menu">
+              <div className="text-9">Blog</div>
+            </div>
+          )}
+
+          <div className={`div-wrapper ${menuClassName}`}>
+            <div className="text-9">Pricing</div>
+          </div>
+
+          <a href="mailto:hello@scopedocs.ai?subject=ScopeDocs%20Inquiry" className="menu">
+            <div className="text-9">Contact Us</div>
+          </a>
         </div>
 
-        <a href="mailto:hello@scopedocs.ai?subject=ScopeDocs%20Inquiry" className="menu">
-          <div className="text-9">Contact Us</div>
-        </a>
+        <Button
+          className={buttonSizeNormalTypeClassName}
+          size="normal"
+          text={buttonText}
+          textClassName="button-instance"
+          type="secondary"
+          href={buttonText === "Book Demo" ? "https://calendar.app.google/hdAMUpqTcD2uzbHx9" : undefined}
+        />
+
+        {/* Hamburger button for mobile */}
+        <button 
+          className="hamburger"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <Button
-        className={buttonSizeNormalTypeClassName}
-        size="normal"
-        text={buttonText}
-        textClassName="button-instance"
-        type="secondary"
-        href={buttonText === "Book Demo" ? "https://calendar.app.google/hdAMUpqTcD2uzbHx9" : undefined}
-      />
-    </div>
+      {/* Mobile Menu */}
+      <div 
+        className={`mobile-menu-overlay ${isMenuOpen ? 'mobile-menu-overlay-open' : ''}`}
+        onClick={toggleMenu}
+      ></div>
+      <div className={`mobile-menu ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
+        <button 
+          className="mobile-menu-close"
+          onClick={toggleMenu}
+          aria-label="Close menu"
+        >
+          ×
+        </button>
+        <div className="mobile-menu-content">
+          <div className="mobile-menu-item" onClick={() => handleMenuClick()}>
+            <div className="text-9">About</div>
+          </div>
+
+          <div className="mobile-menu-item" onClick={() => handleMenuClick(scrollToFeatures)}>
+            <div className="text-9">Features</div>
+          </div>
+
+          {hasMenu && (
+            <div className="mobile-menu-item" onClick={() => handleMenuClick()}>
+              <div className="text-9">Blog</div>
+            </div>
+          )}
+
+          <a 
+            href="mailto:hello@scopedocs.ai?subject=ScopeDocs%20Inquiry" 
+            className="mobile-menu-item"
+            onClick={() => handleMenuClick()}
+          >
+            <div className="text-9">Contact Us</div>
+          </a>
+
+          <div className="mobile-menu-button">
+            <Button
+              className={buttonSizeNormalTypeClassName}
+              size="normal"
+              text={buttonText}
+              textClassName="button-instance"
+              type="secondary"
+              href={buttonText === "Book Demo" ? "https://calendar.app.google/hdAMUpqTcD2uzbHx9" : undefined}
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };

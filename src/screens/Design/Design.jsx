@@ -356,6 +356,14 @@ export const Design = () => {
     >
       {screenWidth < 1024 && (
         <>
+          <Navbar
+            className="navbar-mobile-instance"
+            logoFill="/img/fill-3-1.svg"
+            logoImg="/img/fill-2-3.svg"
+            logoFill1="/img/fill-1-1.svg"
+            hasMenu={false}
+            buttonText="Book Demo"
+          />
           <div className="container">
             <div className="hero">
               <img className="lights" alt="Lights" src="/img/lights-1.svg" />
