@@ -1060,7 +1060,15 @@ export const Design = () => {
                         aria-expanded={openFaqIndex === index}
                         aria-controls={`faq-answer-mobile-${index}`}
                       >
-                        <span className="faq-question-text">{faq.question}</span>
+                        <span className="faq-question-text">
+                          {index === 4 ? (
+                            <>
+                              Do you train AI models on our company <br />data?
+                            </>
+                          ) : (
+                            faq.question
+                          )}
+                        </span>
                         <span className={`faq-arrow ${openFaqIndex === index ? "faq-arrow-open" : ""}`}>
                           <svg
                             width="24"
