@@ -4030,9 +4030,72 @@
     padding-bottom: 24px !important;
   }
 
-  /* Hide or reduce spacing for frame-12 after footer on mobile */
+  /* Show and position frame-12 (Microsoft Teams, Zoom, Slack, GitHub) above frame-16 on mobile */
   .design .frame-12 {
+    display: flex !important;
+    top: 5030px !important;
+    left: 20px !important;
+    width: calc(100% - 40px) !important;
+    max-width: 400px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .design .frame-12::-webkit-scrollbar {
     display: none !important;
+  }
+
+  /* Position frame-16 (Jira, Notion, GitHub, Dropbox) below frame-12 on mobile */
+  .design .frame-16 {
+    top: 5174px !important;
+    left: 20px !important;
+    width: calc(100% - 40px) !important;
+    max-width: 400px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .design .frame-16::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* Ensure frame-13 items don't shrink and allow horizontal scrolling */
+  .design .frame-12 .frame-13,
+  .design .frame-16 .frame-13 {
+    flex-shrink: 0 !important;
+    min-width: fit-content !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Ensure first and last items are fully visible when scrolling */
+  .design .frame-12 .frame-13:first-child,
+  .design .frame-16 .frame-13:first-child {
+    margin-left: 0 !important;
+  }
+
+  .design .frame-12 .frame-13:last-child,
+  .design .frame-16 .frame-13:last-child {
+    margin-right: 0 !important;
+  }
+
+  /* Make Jira logo smaller to match Microsoft Teams size in mobile view */
+  .design .frame-16 .frame-14 .jira-core-1 {
+    width: 40px !important;
+    height: 40px !important;
+    left: 12px !important;
+    top: 12px !important;
   }
 
   /* Hide the spacer element */
@@ -4041,9 +4104,9 @@
   }
 
   /* Reposition testimonials section to come after the tool icons (frame-16) */
-  /* frame-16 ends around 5331px, so place testimonials at 5450px with spacing */
+  /* frame-16 ends around 5300px, so place testimonials closer with smaller gap */
   .design .frame-9 {
-    top: 5450px !important;
+    top: 5360px !important;
     left: -20px !important;
   }
 
@@ -4078,5 +4141,19 @@
   /* Hide arrow icons in FAQ question cards for mobile */
   .design .faq-arrow {
     display: none !important;
+  }
+
+  /* Reduce FAQ cards width to create gap on the right side in mobile view */
+  .design .frame-11 {
+    width: calc(100% - clamp(20px, 5vw, 40px)) !important;
+    max-width: 340px !important;
+  }
+
+  .design .faq-accordion-list {
+    width: 100% !important;
+  }
+
+  .design .faq-accordion-item {
+    width: 100% !important;
   }
 }

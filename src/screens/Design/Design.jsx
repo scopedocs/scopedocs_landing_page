@@ -1200,18 +1200,16 @@ export const Design = () => {
             </div>
 
             <div className="frame-13">
-              <img
-                className="frame-14"
-                alt="Frame"
-                src="/img/frame-427322178-3.png"
-              />
+              <div className="frame-14">
+                <div className="ellipse-6" />
+
+                <SocialIcons1 className="social-icons" />
+              </div>
 
               <div className="frame-15">
-                <div className="text-wrapper-16">Google Drive</div>
+                <div className="text-wrapper-16">Github</div>
 
-                <p className="text-wrapper-17">
-                  Cloud storage and File Sharing
-                </p>
+                <div className="text-wrapper-17">Development Platform</div>
               </div>
             </div>
           </div>
