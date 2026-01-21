@@ -420,8 +420,8 @@ export const Design = () => {
                     <CatppuccinFolderDocs2 className="catppuccin-folder-docs-2" />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text="Living Docs"
-                  text1="Connect Slack, GitHub PRs, Jira/Linear tickets, and specs, and ScopeDocs keeps internal docs current as work changes."
+                  text="Automated Documentation"
+                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -433,8 +433,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text2="Your Team’s Way"
-                  text3="Match your org’s structure, services, and processes, without forcing a new workflow or rigid templates."
+                  text2="Flexible Engineering Workflows"
+                  text3="Scale with your existing services and org structure without disrupting developer velocity. ScopeDocs integrates directly into your SDLC and documentation workflows, capturing real-time team activity instead of relying on manual templates"
                   version="two"
                 />
                 <WhyChooseUsCard
@@ -447,8 +447,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text4="Shareable Context"
-                  text5="Create clean pages people can hand off, onboard with, and reference later, with links back to the original sources."
+                  text4="Automated Developer Onboarding"
+                  text5="Build a traceable knowledge base with clean onboarding pages and technical handoffs. Every page is automatically generated with direct links back to the original source threads in Slack or GitHub, providing instant context for new hires"
                   version="three"
                 />
                 <WhyChooseUsCard
@@ -456,8 +456,8 @@ export const Design = () => {
                   className="why-choose-us-card-6"
                   icon={<Chartbar className="instance-node-5" color="white" />}
                   iconContainerClassName="why-choose-us-card-2"
-                  text6="Change Intelligence"
-                  text7="See what changed, why it changed, and what it might affect, all source-linked so it’s easy to track."
+                  text6="Traceable Impact Analysis"
+                  text7="See exactly what changed and why. Track the technical impact of every code change with source-linked documentation that shows how PRs and tickets affect your architecture, services, and runbooks"
                   textClassName="instance-node-6"
                   version="four"
                 />
@@ -1136,8 +1136,8 @@ export const Design = () => {
                     <CatppuccinFolderDocs2 className="catppuccin-folder-docs-2" />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text="Living Docs"
-                  text1="Connect Slack, GitHub PRs, Jira/Linear tickets, and specs, and ScopeDocs keeps internal docs current as work changes."
+                  text="Automated Documentation"
+                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -1150,8 +1150,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text2="Your Team’s Way"
-                  text3="Match your org’s structure, services, and processes, without forcing a new workflow or rigid templates."
+                  text2="Flexible Engineering Workflows"
+                  text3="Scale with your existing services and org structure without disrupting developer velocity. ScopeDocs integrates directly into your SDLC and documentation workflows, capturing real-time team activity instead of relying on manual templates"
                   version="two"
                 />
                 <WhyChooseUsCard
@@ -1164,8 +1164,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text4="Shareable Context"
-                  text5="Create clean pages people can hand off, onboard with, and reference later, with links back to the original sources."
+                  text4="Automated Developer Onboarding"
+                  text5="Build a traceable knowledge base with clean onboarding pages and technical handoffs. Every page is automatically generated with direct links back to the original source threads in Slack or GitHub, providing instant context for new hires"
                   version="three"
                 />
                 <WhyChooseUsCard
@@ -1173,8 +1173,8 @@ export const Design = () => {
                   className="why-choose-us-card-7"
                   icon={<Chartbar className="instance-node-5" color="white" />}
                   iconContainerClassName="why-choose-us-card-2"
-                  text6="Change Intelligence"
-                  text7="See what changed, why it changed, and what it might affect, all source-linked so it’s easy to track."
+                  text6="Traceable Impact Analysis"
+                  text7="See exactly what changed and why. Track the technical impact of every code change with source-linked documentation that shows how PRs and tickets affect your architecture, services, and runbooks"
                   textClassName="instance-node-6"
                   version="four"
                 />
@@ -1461,8 +1461,8 @@ export const Design = () => {
                     <CatppuccinFolderDocs2 className="catppuccin-folder-docs-2" />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text="Living Docs"
-                  text1="Connect Slack, GitHub PRs, Jira/Linear tickets, and specs, and ScopeDocs keeps internal docs current as work changes."
+                  text="Automated Documentation"
+                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -1475,8 +1475,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text2="Your Team’s Way"
-                  text3="Match your org’s structure, services, and processes, without forcing a new workflow or rigid templates."
+                  text2="Flexible Engineering Workflows"
+                  text3="Scale with your existing services and org structure without disrupting developer velocity. ScopeDocs integrates directly into your SDLC and documentation workflows, capturing real-time team activity instead of relying on manual templates"
                   version="two"
                 />
                 <WhyChooseUsCard
@@ -1489,8 +1489,8 @@ export const Design = () => {
                     />
                   }
                   iconContainerClassName="why-choose-us-card-2"
-                  text4="Shareable Context"
-                  text5="Create clean pages people can hand off, onboard with, and reference later, with links back to the original sources."
+                  text4="Automated Developer Onboarding"
+                  text5="Build a traceable knowledge base with clean onboarding pages and technical handoffs. Every page is automatically generated with direct links back to the original source threads in Slack or GitHub, providing instant context for new hires"
                   version="three"
                 />
                 <WhyChooseUsCard
@@ -1498,8 +1498,8 @@ export const Design = () => {
                   className="why-choose-us-card-8"
                   icon={<Chartbar className="instance-node-5" color="white" />}
                   iconContainerClassName="why-choose-us-card-2"
-                  text6="Change Intelligence"
-                  text7="See what changed, why it changed, and what it might affect, all source-linked so it’s easy to track."
+                  text6="Traceable Impact Analysis"
+                  text7="See exactly what changed and why. Track the technical impact of every code change with source-linked documentation that shows how PRs and tickets affect your architecture, services, and runbooks"
                   textClassName="instance-node-6"
                   version="four"
                 />
