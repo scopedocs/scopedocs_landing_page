@@ -1,0 +1,1 @@
+export { NewTestimonialCard } from "./NewTestimonialCard";

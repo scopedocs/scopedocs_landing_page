@@ -33,6 +33,20 @@ export const Navbar = ({
     setIsMenuOpen(false);
   };
 
+  const scrollToBlog = () => {
+    const element = document.getElementById('blog-section');
+    if (element) {
+      const offset = 120;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   const handleMenuClick = (callback) => {
     if (callback) callback();
     setIsMenuOpen(false);
@@ -60,11 +74,9 @@ export const Navbar = ({
             <div className="text-9">Features</div>
           </div>
 
-          {hasMenu && (
-            <div className="menu">
-              <div className="text-9">Blog</div>
-            </div>
-          )}
+          <div className="menu" onClick={scrollToBlog}>
+            <div className="text-9">Blog</div>
+          </div>
 
           <div className={`div-wrapper ${menuClassName}`}>
             <div className="text-9">Pricing</div>
@@ -118,11 +130,9 @@ export const Navbar = ({
             <div className="text-9">Features</div>
           </div>
 
-          {hasMenu && (
-            <div className="mobile-menu-item" onClick={() => handleMenuClick()}>
-              <div className="text-9">Blog</div>
-            </div>
-          )}
+          <div className="mobile-menu-item" onClick={() => handleMenuClick(scrollToBlog)}>
+            <div className="text-9">Blog</div>
+          </div>
 
           <a 
             href="mailto:hello@scopedocs.ai?subject=ScopeDocs%20Inquiry" 
