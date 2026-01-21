@@ -642,19 +642,6 @@
   width: 1280px;
 }
 
-.design .top-bar-light-instance {
-  align-self: stretch !important;
-  position: relative !important;
-  width: 100% !important;
-}
-
-.design .container-4 .top-bar-light-instance {
-  width: 340px !important;
-}
-
-.design .top-bar-light-2 {
-  width: 4.06% !important;
-}
 
 .design .task-dashboard {
   background-color: #0f0f0f;
@@ -4069,12 +4056,6 @@
     left: 60px !important;
   }
 
-  /* Restore original icon size for TopBarLight in container-4 on mobile */
-  .design .container-4 .top-bar-light-instance .icon,
-  .design .container-4 .top-bar-light-2 {
-    width: 52px !important;
-    min-width: 52px !important;
-  }
 
   /* Add gap before "Turn Work Into Living Docs" section on mobile */
   .design .frame-7 {

@@ -22,7 +22,6 @@ import { Navbar } from "../../components/Navbar";
 import { NotionWrapper } from "../../components/NotionWrapper";
 import { Plus } from "../../components/Plus";
 import { TestimonialCard } from "../../components/TestimonialCard";
-import { TopBarLight } from "../../components/TopBarLight";
 import { WhyChooseUsCard } from "../../components/WhyChooseUsCard";
 import { CatppuccinFolderDocs2 } from "../../icons/CatppuccinFolderDocs2";
 import { Chartbar } from "../../icons/Chartbar";
@@ -385,9 +384,7 @@ export const Design = () => {
                       </button>
 
                       <div className="text-11">
-                        Know your code,
-                        <br />
-                        within minutes
+                      Automated Engineering Documentation
                       </div>
 
                       <p className="text-12">
@@ -539,11 +536,6 @@ export const Design = () => {
             <div className="image">
               <div className="image-2">
                 <div className="container-3">
-                  <TopBarLight
-                    className="top-bar-light-instance"
-                    iconClassName="top-bar-light-2"
-                    style="dark"
-                  />
                   <div className="task-dashboard">
                     <div className="button-5">
                       <div className="text-16">In Progress</div>
@@ -760,11 +752,6 @@ export const Design = () => {
 
             <div className="image">
               <div className="container-4">
-                <TopBarLight
-                  className="top-bar-light-instance"
-                  iconClassName="top-bar-light-2"
-                  style="dark"
-                />
                 <div className="task-dashboard">
                   <div className="button-5">
                     <div className="text-16">In Progress</div>
@@ -1520,9 +1507,7 @@ export const Design = () => {
 
                     <div className="content-29">
                       <div className="text-35">
-                        Know your code,
-                        <br />
-                        within minutes
+                        Automated Engineering Documentation
                       </div>
 
                       <p className="text-36">
@@ -1826,9 +1811,7 @@ export const Design = () => {
 
                     <div className="content-29">
                       <div className="text-38">
-                        Know your code,
-                        <br />
-                        within minutes
+                        Automated Engineering Documentation
                       </div>
 
                       <p className="text-39">
@@ -2190,11 +2173,6 @@ export const Design = () => {
                 }}
               >
                 <div className="container-9">
-                  <TopBarLight
-                    className="top-bar-light-instance"
-                    iconClassName="top-bar-light-2"
-                    style="dark"
-                  />
                   <div className="task-dashboard-2">
                     <div className="button-15">
                       <div className="text-16">In Progress</div>
@@ -2408,11 +2386,6 @@ export const Design = () => {
               }}
             >
               <div className="container-9">
-                <TopBarLight
-                  className="top-bar-light-instance"
-                  iconClassName="top-bar-light-2"
-                  style="dark"
-                />
                 <div
                   className="task-dashboard-3"
                   style={{
