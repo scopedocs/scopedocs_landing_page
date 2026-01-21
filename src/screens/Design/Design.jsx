@@ -22,6 +22,9 @@ import { Navbar } from "../../components/Navbar";
 import { NotionWrapper } from "../../components/NotionWrapper";
 import { Plus } from "../../components/Plus";
 import { TestimonialCard } from "../../components/TestimonialCard";
+import { NewTestimonialCard } from "../../components/NewTestimonialCard";
+import { ToolCard } from "../../components/ToolCard";
+import { BlogCard } from "../../components/BlogCard";
 import { WhyChooseUsCard } from "../../components/WhyChooseUsCard";
 import { CatppuccinFolderDocs2 } from "../../icons/CatppuccinFolderDocs2";
 import { Chartbar } from "../../icons/Chartbar";
@@ -316,43 +319,7 @@ export const Design = () => {
   }, [showModal]);
 
   return (
-    <div
-      className="design"
-      style={{
-        alignItems:
-          (screenWidth >= 1024 && screenWidth < 1440) || screenWidth >= 1440
-            ? "flex-start"
-            : undefined,
-        display:
-          (screenWidth >= 1024 && screenWidth < 1440) || screenWidth >= 1440
-            ? "flex"
-            : undefined,
-        flexDirection:
-          (screenWidth >= 1024 && screenWidth < 1440) || screenWidth >= 1440
-            ? "column"
-            : undefined,
-        gap:
-          (screenWidth >= 1024 && screenWidth < 1440) || screenWidth >= 1440
-            ? "140px"
-            : undefined,
-        height:
-          screenWidth >= 1024 && screenWidth < 1440 ? "8369px" : undefined,
-        minHeight: screenWidth < 1024 ? "9928px" : undefined,
-        minWidth:
-          screenWidth < 1024
-            ? "440px"
-            : screenWidth >= 1024 && screenWidth < 1440
-              ? "1024px"
-              : screenWidth >= 1440
-                ? "1440px"
-                : undefined,
-        overflow:
-          (screenWidth >= 1024 && screenWidth < 1440) || screenWidth < 1024
-            ? "hidden"
-            : undefined,
-        width: screenWidth < 1024 ? "100%" : undefined,
-      }}
-    >
+    <div className="design w-full min-h-screen overflow-x-hidden lg:flex lg:flex-col lg:items-start lg:gap-[clamp(80px,9.7vw,140px)]">
       {screenWidth < 1024 && (
         <>
           <Navbar
@@ -365,8 +332,6 @@ export const Design = () => {
           />
           <div className="container">
             <div className="hero">
-              <img className="lights" alt="Lights" src="/img/lights-1.svg" />
-
               <div className="container-2">
                 <div className="frame-wrapper">
                   <div className="frame">
@@ -384,21 +349,13 @@ export const Design = () => {
                       </button>
 
                       <div className="text-11">
-                      Automated Engineering Documentation
+                        Know your code,
+                        <br />
+                        within minutes
                       </div>
 
                       <p className="text-12">
-                        <span className="span">ScopeDocs </span>
-
-                        <span className="text-wrapper-5">
-                          turns your team’s daily work into always{" "}
-                        </span>
-
-                        <span className="span">current internal docs</span>
-
-                        <span className="text-wrapper-5">, </span>
-
-                        <span className="text-wrapper-6">no extra effort.</span>
+                        <span className="span">ScopeDocs is an AI documentation platform that turns your GitHub, Slack, and Jira activity into a single source of truth automatically</span>
                       </p>
                     </div>
 
@@ -426,6 +383,18 @@ export const Design = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Header Coding Image Block */}
+          <div className="header-coding-image-section">
+            <div className="header-coding-image-container">
+              <img
+                src="/img/header_coding_image.png"
+                alt="Coding and Documentation"
+                className="header-coding-image"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -496,472 +465,176 @@ export const Design = () => {
             </div>
           </div>
 
-          <div className="frame-7">
-            <div className="content-8">
-              <div className="content-9">
-                <p className="text-14">
-                  Turn Work Into <br />
-                  Living Docs
-                </p>
-
-                <p className="text-15">
-                  <span className="text-wrapper-8">ScopeDocs </span>
-
-                  <span className="text-wrapper-9">
-                    automatically generates documentation
-                  </span>
-
-                  <span className="text-wrapper-8"> from your </span>
-
-                  <span className="text-wrapper-9">
-                    Slack threads, tickets, and code changes
-                  </span>
-
-                  <span className="text-wrapper-10">,</span>
-
-                  <span className="text-wrapper-8">
-                    {" "}
-                    then keeps it continuously updated as work evolves. No{" "}
-                  </span>
-
-                  <span className="text-wrapper-9">manual writing</span>
-
-                  <span className="text-wrapper-8">, no </span>
-
-                  <span className="text-wrapper-11">outdated wikis</span>
-                </p>
+          {/* Works with the tools section */}
+          <div className="tools-section">
+            <div className="tools-section-header">
+              <div className="text-37">
+                Works with the tools
+                <br />
+                you already use
               </div>
-            </div>
-
-            <div className="image">
-              <div className="image-2">
-                <div className="container-3">
-                  <div className="task-dashboard">
-                    <div className="button-5">
-                      <div className="text-16">In Progress</div>
-
-                      <div className="div-3">
-                        <Plus format="outline" weight="bold" />
-                        <DotsThreeOutline format="outline" weight="fill" />
-                      </div>
-                    </div>
-
-                    <div className="button-6">
-                      <div className="text-16">Done</div>
-
-                      <div className="div-3">
-                        <Plus format="outline" weight="bold" />
-                        <DotsThreeOutline format="outline" weight="fill" />
-                      </div>
-                    </div>
-
-                    <div className="card">
-                      <div className="header">
-                        <button className="button-7">
-                          <div className="text-17">Medium</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Organize and Lead the Team Feedback Session for
-                          Project
-                        </p>
-
-                        <p className="text-19">
-                          Schedule a meeting to gather feedback on the latest
-                          project designs.
+              <p className="text-25">
+                Sync your stack in minutes, turn PRs, tickets, and threads into living docs.
                         </p>
                       </div>
 
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-4">
-                            <div className="text-20">+2</div>
-                          </div>
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">2</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-2">
-                      <div className="header">
-                        <button className="button-7">
-                          <div className="text-17">Medium</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Revise and Update Marketing Campaign Assets for the
-                          Holiday
-                        </p>
-
-                        <p className="text-19">
-                          Adjust ad visuals and copy to align with the holiday
-                          campaign goals.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-5" />
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">5</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-3">
-                      <div className="header">
-                        <button className="button-8">
-                          <div className="text-21">High</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Draft a Comprehensive Blog Post on Task Management
-                          Strategies
-                        </p>
-
-                        <p className="text-19">
-                          Write a 500-word blog post offering tips for better
-                          task management.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-6" />
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">2</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-4">
-                      <div className="header">
-                        <button className="button-8">
-                          <div className="text-21">High</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Prepare Scripts and Recruit Participants for Usability
-                          Testing
-                        </p>
-
-                        <p className="text-19">
-                          Set up user testing procedures to evaluate the
-                          app&#39;s functionality.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-4">
-                            <div className="text-20">+1</div>
-                          </div>
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">6</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <img
-                  className="software-developer"
-                  alt="Software developer"
-                  src="/img/software-developer-coding-on-laptop-2025-01-29-08-37-09-utc-2.png"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="frame-8">
-            <div className="content-12">
-              <div className="content-13">
-                <p className="text-22">Find Answers in Seconds, With Sources</p>
-
-                <p className="text-23">
-                  Ask a question and get a decision-ready answer backed by
-                  source links, owners, and timestamps. Every summary is
-                  traceable to the exact conversation, PR, or ticket, so teams
-                  can trust it, share it, and move faster.
-                </p>
-              </div>
-            </div>
-
-            <div className="image">
-              <div className="container-4">
-                <div className="task-dashboard">
-                  <div className="button-5">
-                    <div className="text-16">In Progress</div>
-
-                    <div className="div-3">
-                      <Plus format="outline" weight="bold" />
-                      <DotsThreeOutline format="outline" weight="fill" />
-                    </div>
-                  </div>
-
-                  <div className="button-6">
-                    <div className="text-16">Done</div>
-
-                    <div className="div-3">
-                      <Plus format="outline" weight="bold" />
-                      <DotsThreeOutline format="outline" weight="fill" />
-                    </div>
-                  </div>
-
-                  <div className="card">
-                    <div className="header">
-                      <button className="button-7">
-                        <div className="text-17">Medium</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Organize and Lead the Team Feedback Session for Project
-                      </p>
-
-                      <p className="text-19">
-                        Schedule a meeting to gather feedback on the latest
-                        project designs.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-4">
-                          <div className="text-20">+2</div>
-                        </div>
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">2</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-2">
-                    <div className="header">
-                      <button className="button-7">
-                        <div className="text-17">Medium</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Revise and Update Marketing Campaign Assets for the
-                        Holiday
-                      </p>
-
-                      <p className="text-19">
-                        Adjust ad visuals and copy to align with the holiday
-                        campaign goals.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-5" />
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-3">
-                    <div className="header">
-                      <button className="button-8">
-                        <div className="text-21">High</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Draft a Comprehensive Blog Post on Task Management
-                        Strategies
-                      </p>
-
-                      <p className="text-19">
-                        Write a 500-word blog post offering tips for better task
-                        management.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-6" />
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">2</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-4">
-                    <div className="header">
-                      <button className="button-8">
-                        <div className="text-21">High</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Prepare Scripts and Recruit Participants for Usability
-                        Testing
-                      </p>
-
-                      <p className="text-19">
-                        Set up user testing procedures to evaluate the app&#39;s
-                        functionality.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-4">
-                          <div className="text-20">+1</div>
-                        </div>
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">6</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+            <div className="tools-grid">
+              <ToolCard
+                logo={
                   <img
-                    className="software-developer-2"
-                    alt="Software developer"
-                    src="/img/software-developer-coding-on-laptop-2025-01-29-08-37-09-utc-1-2.png"
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
                   />
-                </div>
+                }
+                toolName="Asana"
+                category="Project Management"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Zoom"
+                category="Video Conferencing"
+              />
+              <ToolCard
+                logo={<Slack className="slack-tool-icon" />}
+                toolName="Slack"
+                category="Collaboration Platform"
+              />
+              <ToolCard
+                logo={<SocialIcons1 className="github-tool-icon" />}
+                toolName="GitHub"
+                category="Development Platform"
+              />
+              <ToolCard
+                logo={<JiraCore2 className="jira-tool-icon" />}
+                toolName="Jira"
+                category="Work Management Platform"
+              />
+              <ToolCard
+                logo={<Notion1 className="notion-tool-icon" />}
+                toolName="Notion"
+                category="Note-taking App"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "36px", width: "auto" }}
+                  />
+                }
+                toolName="Google Drive"
+                category="Cloud storage and File Sharing"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/microsfot_team_logo.png"
+                    alt="Microsoft Teams"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Microsoft Teams"
+                category="Collaboration Platform"
+              />
+            </div>
+          </div>
+
+          {/* Blog / Resources Section */}
+          <div id="blog-section" className="blog-section">
+            <div className="blog-section-header">
+              <div className="text-37">
+                From the blog
               </div>
-            </div>
-          </div>
+              <p className="text-25">
+                Practical guides on documentation, developer workflows, and AI that fits into real teams.
+                      </p>
+                    </div>
 
-          <div className="content-14">
-            <div className="text-37">
-              Works with the tools
-              <br />
-              you already use
-            </div>
+            <div className="blog-grid">
+              <BlogCard
+                imageUrl="/img/coding.png"
+                title="Keeping docs up to date as code changes"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                meta="5 min read"
+              />
+              <BlogCard
+                imageUrl="/img/collaboration_teams-vs.png"
+                title="Answers you can trust, with links to the source"
+                description="Summaries are only useful if you can verify them. Learn how to turn threads, tickets, and PR discussions into source-linked answers that your team can check, share, and rely on without second guessing."
+                meta="6 min read"
+              />
+              <BlogCard
+                imageUrl="/img/feature.png"
+                title="A practical setup for living documentation"
+                description="Living docs are not about writing more, they are about staying aligned as things change. This guide covers the patterns teams use to keep specs, runbooks, and architecture notes accurate, even when priorities shift mid-sprint."
+                meta="7 min read"
+              />
+                        </div>
+                      </div>
+
+          {/* New Testimonials Section */}
+          <div className="testimonials-section">
+            <div className="testimonials-section-header">
+            <div className="text-37 testimonials-header-text">
+                What users
+                <br />
+                <span className="testimonials-header-gray">Say about ScopeDocs</span>
+                        </div>
             <p className="text-25">
-              Sync your stack in minutes, turn PRs, tickets, and threads into living docs
-            </p>
-          </div>
+                Our users success stories highlight the real value.
+                      </p>
+                    </div>
 
-          <div className="v" />
+            <div className="testimonials-grid">
+              <NewTestimonialCard
+                quote="I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what's going to happen…because this has been really difficult for us to get LLMs to [document] this well."
+                name="Sarah T"
+                title="COO"
+                company="VectorVector"
+                avatar="/img/avatar-1.png"
+                logo={
+                  <img
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+              <NewTestimonialCard
+                quote="I've paid for a lot of project management tools, but what caught my attention was that your product was generative documentation!"
+                name="David K"
+                title="Software Development Engineer"
+                avatar="/img/avatar-2.png"
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+              <NewTestimonialCard
+                quote="We finally have documentation that stays current. When tickets and PRs change, ScopeDocs keeps the docs aligned with reality."
+                name="Alexa R."
+                title="VP of Engineering"
+                avatar="/img/avatar-3.png"
+                logo={
+                  <img
+                    src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+            </div>
+          </div>
 
           <div className="frame-9">
             <div className="frame-10">
@@ -982,7 +655,7 @@ export const Design = () => {
                     avatarClassName="testimonial-card-2"
                     className="testimonial-card-instance"
                     logo="/img/logo-6.svg"
-                    text="&#34;I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what’s going to happen…because this has been really difficult for us to get LLMs to [document] this well.”"
+                    text="&#34;I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what's going to happen…because this has been really difficult for us to get LLMs to [document] this well.&#34;"
                     version="one"
                   />
                   <TestimonialCard
@@ -1007,6 +680,8 @@ export const Design = () => {
                 </div>
               </div>
 
+              <div className="faq-grid-container">
+                <div className="faq-left-column">
               <div className="text-27">
                 Frequently
                 <br />
@@ -1028,8 +703,10 @@ export const Design = () => {
                   text="Contact Our Team"
                   type="outlined"
                 />
+                  </div>
               </div>
 
+                <div className="faq-right-column">
               <div className="frame-11">
                 <div className="faq-accordion-list">
                   {faqData.map((faq, index) => (
@@ -1087,6 +764,8 @@ export const Design = () => {
                   ))}
                 </div>
               </div>
+                </div>
+              </div>
             </div>
 
             <div className="footer-3">
@@ -1135,136 +814,6 @@ export const Design = () => {
             </div>
           </div>
 
-          <div className="frame-12">
-            <div className="frame-13">
-              <img
-                className="frame-14"
-                alt="Frame"
-                src="/img/frame-427322178-2.png"
-              />
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Microsoft Teams</div>
-
-                <div className="text-wrapper-17">Collaboration Platform</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-4" />
-
-                <img
-                  className="image-3"
-                  alt="Image"
-                  src="/img/image-588254642.png"
-                />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Zoom</div>
-
-                <div className="text-wrapper-17">Video Conferencing</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-5" />
-
-                <Slack className="slack-1" />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Slack</div>
-
-                <div className="text-wrapper-17">Software Type</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-6" />
-
-                <SocialIcons1 className="social-icons" />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Github</div>
-
-                <div className="text-wrapper-17">Development Platform</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="frame-16">
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-5" />
-
-                <JiraCoreWrapper />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Jira</div>
-
-                <div className="text-wrapper-17">Work Management Platform</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-5" />
-
-                <NotionWrapper />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Notion</div>
-
-                <div className="text-wrapper-17">Note-taking App</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-6" />
-
-                <SocialIcons1 className="social-icons" />
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Github</div>
-
-                <div className="text-wrapper-17">Development Platform</div>
-              </div>
-            </div>
-
-            <div className="frame-13">
-              <div className="frame-14">
-                <div className="ellipse-6" />
-
-                <div className="dropbox-2">
-                  <div className="bg" />
-                  <img
-                    className="dropbox-4"
-                    alt="Dropbox"
-                    src="/img/dropbox.svg"
-                  />
-                </div>
-              </div>
-
-              <div className="frame-15">
-                <div className="text-wrapper-16">Dropbox</div>
-
-                <p className="text-wrapper-17">
-                  Cloud storage and File Sharing
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <img className="element" alt="Element" src="/img/1card-1.png" />
 
           {/* PRICING SECTION - Temporarily disabled. Set SHOW_PRICING to true to re-enable. */}
           {SHOW_PRICING && (
@@ -1440,8 +989,6 @@ export const Design = () => {
         <>
           <div className="container-5">
             <div className="hero-2">
-              <img className="lights-2" alt="Lights" src="/img/lights-2.svg" />
-
               <div className="container-6">
                 <div className="navbar-2">
                   <div className="div-3">
@@ -1507,21 +1054,13 @@ export const Design = () => {
 
                     <div className="content-29">
                       <div className="text-35">
-                        Automated Engineering Documentation
+                        Know your code,
+                        <br />
+                        within minutes
                       </div>
 
                       <p className="text-36">
-                        <span className="span">ScopeDocs </span>
-
-                        <span className="text-wrapper-5">
-                          turns your team’s daily work into always{" "}
-                        </span>
-
-                        <span className="span">current internal docs</span>
-
-                        <span className="text-wrapper-5">, </span>
-
-                        <span className="text-wrapper-6">no extra effort.</span>
+                        <span className="span">ScopeDocs is an AI documentation platform that turns your GitHub, Slack, and Jira activity into a single source of truth automatically</span>
                       </p>
                     </div>
                   </div>
@@ -1559,6 +1098,18 @@ export const Design = () => {
                   className="element-card"
                   alt="Element"
                   src="/img/1card-1.png"
+                />
+              </div>
+            </div>
+
+            {/* Header Coding Image Block */}
+            <div className="header-coding-image-section">
+              <div className="header-coding-image-container">
+                <img
+                  src="/img/header_coding_image.png"
+                  alt="Coding and Documentation"
+                  className="header-coding-image"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1631,152 +1182,177 @@ export const Design = () => {
             </div>
           </div>
 
-          <div className="v-2">
-            <div className="frame-17">
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178-2.png"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Microsoft Teams</div>
-
-                  <div className="text-wrapper-17">Collaboration Platform</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-4" />
-
-                  <img
-                    className="image-3"
-                    alt="Image"
-                    src="/img/image-588254642.png"
-                  />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Zoom</div>
-
-                  <div className="text-wrapper-17">Video Conferencing</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Slack className="slack-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Slack</div>
-
-                  <div className="text-wrapper-17">Software Type</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <SocialIcons1 className="social-icons" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Github</div>
-
-                  <div className="text-wrapper-17">Development Platform</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="frame-18">
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <JiraCoreWrapper />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Jira</div>
-
-                  <div className="text-wrapper-17">
-                    Work Management Platform
-                  </div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Notion1 className="notion-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Notion</div>
-
-                  <div className="text-wrapper-17">Note-taking App</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178-7.svg"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Google Drive</div>
-
-                  <p className="text-wrapper-18">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <div className="dropbox-2">
-                    <div className="bg" />
-
-                    <img
-                      className="dropbox-3"
-                      alt="Dropbox"
-                      src="/img/dropbox-3.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Dropbox</div>
-
-                  <p className="text-wrapper-17">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="content-31">
+          {/* Works with the tools section */}
+          <div className="tools-section">
+            <div className="tools-section-header">
               <div className="text-37">
                 Works with the tools
                 <br />
                 you already use
-              </div>
+                </div>
               <p className="text-25">
-                Sync your stack in minutes, turn PRs, tickets, and threads into living docs
+                Sync your stack in minutes, turn PRs, tickets, and threads into living docs.
               </p>
+              </div>
+
+            <div className="tools-grid">
+              <ToolCard
+                logo={
+                  <img
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Asana"
+                category="Project Management"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Zoom"
+                category="Video Conferencing"
+              />
+              <ToolCard
+                logo={<Slack className="slack-tool-icon" />}
+                toolName="Slack"
+                category="Collaboration Platform"
+              />
+              <ToolCard
+                logo={<SocialIcons1 className="github-tool-icon" />}
+                toolName="GitHub"
+                category="Development Platform"
+              />
+              <ToolCard
+                logo={<JiraCore2 className="jira-tool-icon" />}
+                toolName="Jira"
+                category="Work Management Platform"
+              />
+              <ToolCard
+                logo={<Notion1 className="notion-tool-icon" />}
+                toolName="Notion"
+                category="Note-taking App"
+              />
+              <ToolCard
+                logo={
+                  <img
+                  src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "36px", width: "auto" }}
+                  />
+                }
+                toolName="Google Drive"
+                category="Cloud storage and File Sharing"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/microsfot_team_logo.png"
+                      alt="Microsoft Teams"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Microsoft Teams"
+                category="Collaboration Platform"
+                  />
+                </div>
+              </div>
+
+          {/* Blog / Resources Section */}
+          <div id="blog-section" className="blog-section">
+            <div className="blog-section-header">
+              <div className="text-37">
+                From the blog
+                </div>
+              <p className="text-25">
+                Practical guides on documentation, developer workflows, and AI that fits into real teams.
+              </p>
+              </div>
+
+            <div className="blog-grid">
+              <BlogCard
+                imageUrl="/img/coding.png"
+                title="Keeping docs up to date as code changes"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                meta="5 min read"
+              />
+              <BlogCard
+                imageUrl="/img/collaboration_teams-vs.png"
+                title="Answers you can trust, with links to the source"
+                description="Summaries are only useful if you can verify them. Learn how to turn threads, tickets, and PR discussions into source-linked answers that your team can check, share, and rely on without second guessing."
+                meta="6 min read"
+              />
+              <BlogCard
+                imageUrl="/img/feature.png"
+                title="A practical setup for living documentation"
+                description="Living docs are not about writing more, they are about staying aligned as things change. This guide covers the patterns teams use to keep specs, runbooks, and architecture notes accurate, even when priorities shift mid-sprint."
+                meta="7 min read"
+              />
+              </div>
             </div>
-          </div>
+
+          {/* New Testimonials Section */}
+          <div className="testimonials-section">
+            <div className="testimonials-section-header">
+              <div className="text-37 testimonials-header-text">
+                What users
+                <br />
+                <span className="testimonials-header-gray">Say about ScopeDocs</span>
+                </div>
+              <p className="text-25">
+                Our users success stories highlight the real value.
+              </p>
+              </div>
+
+            <div className="testimonials-grid">
+              <NewTestimonialCard
+                quote="I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what's going to happen…because this has been really difficult for us to get LLMs to [document] this well."
+                name="Sarah T"
+                title="COO"
+                company="VectorVector"
+                avatar="/img/avatar-1.png"
+                logo={
+                  <img
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+              <NewTestimonialCard
+                quote="I've paid for a lot of project management tools, but what caught my attention was that your product was generative documentation!"
+                name="David K"
+                title="Software Development Engineer"
+                avatar="/img/avatar-2.png"
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+              <NewTestimonialCard
+                quote="We finally have documentation that stays current. When tickets and PRs change, ScopeDocs keeps the docs aligned with reality."
+                name="Alexa R."
+                title="VP of Engineering"
+                avatar="/img/avatar-3.png"
+                logo={
+                  <img
+                    src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                    />
+                  </div>
+                </div>
+
         </>
       )}
 
@@ -1784,8 +1360,6 @@ export const Design = () => {
         <>
           <div className="container-7">
             <div className="hero-3">
-              <img className="lights-3" alt="Lights" src="/img/lights.svg" />
-
               <div className="container-8">
                 <Navbar
                   buttonSizeNormalTypeClassName="navbar-4"
@@ -1811,21 +1385,13 @@ export const Design = () => {
 
                     <div className="content-29">
                       <div className="text-38">
-                        Automated Engineering Documentation
+                        Know your code,
+                        <br />
+                        within minutes
                       </div>
 
                       <p className="text-39">
-                        <span className="span">ScopeDocs </span>
-
-                        <span className="text-wrapper-5">
-                          turns your team’s daily work into always{" "}
-                        </span>
-
-                        <span className="span">current internal docs</span>
-
-                        <span className="text-wrapper-5">, </span>
-
-                        <span className="text-wrapper-6">no extra effort.</span>
+                        <span className="span">ScopeDocs is an AI documentation platform that turns your GitHub, Slack, and Jira activity into a single source of truth automatically</span>
                       </p>
                     </div>
                   </div>
@@ -1857,6 +1423,18 @@ export const Design = () => {
                   className="element-2"
                   alt="Element"
                   src="/img/1card-1.png"
+                />
+              </div>
+            </div>
+
+            {/* Header Coding Image Block */}
+            <div className="header-coding-image-section">
+              <div className="header-coding-image-container">
+                <img
+                  src="/img/header_coding_image.png"
+                  alt="Coding and Documentation"
+                  className="header-coding-image"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1929,754 +1507,183 @@ export const Design = () => {
             </div>
           </div>
 
-          <div className="v-3">
-            <div className="frame-19">
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178.svg"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Microsoft Teams</div>
-
-                  <div className="text-wrapper-17">Collaboration Platform</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-4" />
-
-                  <img
-                    className="image-3"
-                    alt="Image"
-                    src="/img/image-588254642.png"
-                  />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Zoom</div>
-
-                  <div className="text-wrapper-17">Video Conferencing</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Slack className="slack-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Slack</div>
-
-                  <div className="text-wrapper-17">Software Type</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <SocialIcons1 className="social-icons" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Github</div>
-
-                  <div className="text-wrapper-17">Development Platform</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="frame-20">
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <JiraCore2
-                    className="jira-core-5"
-                    color="url(#paint0_linear_117331_7702)"
-                  />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Jira</div>
-
-                  <div className="text-wrapper-17">
-                    Work Management Platform
-                  </div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Notion1 className="notion-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Notion</div>
-
-                  <div className="text-wrapper-17">Note-taking App</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178-1.svg"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Google Drive</div>
-
-                  <p className="text-wrapper-18">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <div className="dropbox-2">
-                    <div className="bg" />
-
-                    <img
-                      className="dropbox-4"
-                      alt="Dropbox"
-                      src="/img/dropbox.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Dropbox</div>
-
-                  <p className="text-wrapper-17">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="content-34">
+          {/* Works with the tools section */}
+          <div className="tools-section">
+            <div className="tools-section-header">
               <div className="text-37">
                 Works with the tools
                 <br />
                 you already use
-              </div>
+                </div>
               <p className="text-25">
                 Sync your stack in minutes, turn PRs, tickets, and threads into living docs.
               </p>
-            </div>
-          </div>
-        </>
-      )}
-
-      {((screenWidth >= 1024 && screenWidth < 1440) || screenWidth >= 1440) && (
-        <>
-          <div className="features">
-            <div
-              className="content-35"
-              style={{
-                width:
-                  screenWidth >= 1024 && screenWidth < 1440
-                    ? "364px"
-                    : screenWidth >= 1440
-                      ? "660px"
-                      : undefined,
-              }}
-            >
-              <div className="content-18">
-                <p className="text-40">
-                  Turn Work Into <br />
-                  Living Docs
-                </p>
-
-                <p className="text-41">
-                  <span className="text-wrapper-8">ScopeDocs </span>
-
-                  <span className="text-wrapper-9">
-                    automatically generates documentation
-                  </span>
-
-                  <span className="text-wrapper-8"> from your </span>
-
-                  <span className="text-wrapper-9">
-                    Slack threads, tickets, and code changes
-                  </span>
-
-                  <span className="text-wrapper-10">,</span>
-
-                  <span className="text-wrapper-8">
-                    {" "}
-                    then keeps it continuously updated as work evolves. No{" "}
-                  </span>
-
-                  <span className="text-wrapper-9">manual writing</span>
-
-                  <span className="text-wrapper-8">, no </span>
-
-                  <span className="text-wrapper-11">outdated wikis</span>
-                </p>
               </div>
-            </div>
 
-            <div
-              className="image-wrapper"
-              style={{
-                marginRight:
-                  screenWidth >= 1024 && screenWidth < 1440
-                    ? "-1.00px"
-                    : screenWidth >= 1440
-                      ? "-42.00px"
-                      : undefined,
-                width:
-                  screenWidth >= 1024 && screenWidth < 1440
-                    ? "469px"
-                    : screenWidth >= 1440
-                      ? "630px"
-                      : undefined,
-              }}
-            >
-              <div
-                className="container-wrapper"
-                style={{
-                  height:
-                    screenWidth >= 1024 && screenWidth < 1440
-                      ? "542px"
-                      : screenWidth >= 1440
-                        ? "500px"
-                        : undefined,
-                  marginLeft:
-                    screenWidth >= 1024 && screenWidth < 1440
-                      ? "-54.00px"
-                      : undefined,
-                  marginRight:
-                    screenWidth >= 1024 && screenWidth < 1440
-                      ? "-54.00px"
-                      : undefined,
-                  width:
-                    screenWidth >= 1024 && screenWidth < 1440
-                      ? "577px"
-                      : screenWidth >= 1440
-                        ? "620px"
-                        : undefined,
-                }}
-              >
-                <div className="container-9">
-                  <div className="task-dashboard-2">
-                    <div className="button-15">
-                      <div className="text-16">In Progress</div>
-
-                      <div className="div-3">
-                        <Plus format="outline" weight="bold" />
-                        <DotsThreeOutline format="outline" weight="fill" />
-                      </div>
-                    </div>
-
-                    <div className="button-16">
-                      <div className="text-16">Done</div>
-
-                      <div className="div-3">
-                        <Plus format="outline" weight="bold" />
-                        <DotsThreeOutline format="outline" weight="fill" />
-                      </div>
-                    </div>
-
-                    <div className="card">
-                      <div className="header">
-                        <button className="button-7">
-                          <div className="text-17">Medium</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Organize and Lead the Team Feedback Session for
-                          Project
-                        </p>
-
-                        <p className="text-19">
-                          Schedule a meeting to gather feedback on the latest
-                          project designs.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-4">
-                            <div className="text-20">+2</div>
-                          </div>
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">2</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-2">
-                      <div className="header">
-                        <button className="button-7">
-                          <div className="text-17">Medium</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Revise and Update Marketing Campaign Assets for the
-                          Holiday
-                        </p>
-
-                        <p className="text-19">
-                          Adjust ad visuals and copy to align with the holiday
-                          campaign goals.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-5" />
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">5</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-3">
-                      <div className="header">
-                        <button className="button-8">
-                          <div className="text-21">High</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Draft a Comprehensive Blog Post on Task Management
-                          Strategies
-                        </p>
-
-                        <p className="text-19">
-                          Write a 500-word blog post offering tips for better
-                          task management.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-6" />
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">2</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card-4">
-                      <div className="header">
-                        <button className="button-8">
-                          <div className="text-21">High</div>
-                        </button>
-                      </div>
-
-                      <div className="content-10">
-                        <p className="text-18">
-                          Prepare Scripts and Recruit Participants for Usability
-                          Testing
-                        </p>
-
-                        <p className="text-19">
-                          Set up user testing procedures to evaluate the
-                          app&#39;s functionality.
-                        </p>
-                      </div>
-
-                      <div className="footer-2">
-                        <div className="content-groups-3">
-                          <div className="avatar-2" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-3" />
-
-                          <div className="avatar-4">
-                            <div className="text-20">+1</div>
-                          </div>
-                        </div>
-
-                        <div className="content-groups-4">
-                          <div className="content-11">
-                            <Chat format="outline" weight="regular" />
-                            <div className="text-wrapper-12">6</div>
-                          </div>
-
-                          <div className="content-11">
-                            <Link format="outline" weight="regular" />
-                            <div className="text-wrapper-12">3</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className="software-developer-3"
-                      alt="Software developer"
-                      src="/img/software-developer-coding-on-laptop-2025-01-29-08-37-09-utc-1.png"
+            <div className="tools-grid">
+              <ToolCard
+                logo={
+                  <img
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Asana"
+                category="Project Management"
+              />
+              <ToolCard
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Zoom"
+                category="Video Conferencing"
+              />
+              <ToolCard
+                logo={<Slack className="slack-tool-icon" />}
+                toolName="Slack"
+                category="Collaboration Platform"
+              />
+              <ToolCard
+                logo={<SocialIcons1 className="github-tool-icon" />}
+                toolName="GitHub"
+                category="Development Platform"
+              />
+              <ToolCard
+                logo={<JiraCore2 className="jira-tool-icon" />}
+                toolName="Jira"
+                category="Work Management Platform"
+              />
+              <ToolCard
+                logo={<Notion1 className="notion-tool-icon" />}
+                toolName="Notion"
+                category="Note-taking App"
+              />
+              <ToolCard
+                logo={
+                  <img
+                  src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "36px", width: "auto" }}
+                  />
+                }
+                toolName="Google Drive"
+                category="Cloud storage and File Sharing"
+              />
+              <ToolCard
+                logo={
+                  <img
+                      src="/img/microsfot_team_logo.png"
+                    alt="Microsoft Teams"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+                toolName="Microsoft Teams"
+                category="Collaboration Platform"
                     />
                   </div>
                 </div>
+
+          {/* Blog / Resources Section */}
+          <div id="blog-section" className="blog-section">
+            <div className="blog-section-header">
+              <div className="text-37">
+                From the blog
+              </div>
+              <p className="text-25">
+                Practical guides on documentation, developer workflows, and AI that fits into real teams.
+              </p>
+            </div>
+
+            <div className="blog-grid">
+              <BlogCard
+                imageUrl="/img/coding.png"
+                title="Keeping docs up to date as code changes"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                meta="5 min read"
+              />
+              <BlogCard
+                imageUrl="/img/collaboration_teams-vs.png"
+                title="Answers you can trust, with links to the source"
+                description="Summaries are only useful if you can verify them. Learn how to turn threads, tickets, and PR discussions into source-linked answers that your team can check, share, and rely on without second guessing."
+                meta="6 min read"
+              />
+              <BlogCard
+                imageUrl="/img/feature.png"
+                title="A practical setup for living documentation"
+                description="Living docs are not about writing more, they are about staying aligned as things change. This guide covers the patterns teams use to keep specs, runbooks, and architecture notes accurate, even when priorities shift mid-sprint."
+                meta="7 min read"
+              />
               </div>
             </div>
-          </div>
 
-          <div className="feature">
-            <div
-              className="image-4"
-              style={{
-                width:
-                  screenWidth >= 1440
-                    ? "620px"
-                    : screenWidth >= 1024 && screenWidth < 1440
-                      ? "511px"
-                      : undefined,
-              }}
-            >
-              <div className="container-9">
-                <div
-                  className="task-dashboard-3"
-                  style={{
-                    height:
-                      screenWidth >= 1440
-                        ? "429px"
-                        : screenWidth >= 1024 && screenWidth < 1440
-                          ? "445px"
-                          : undefined,
-                    width:
-                      screenWidth >= 1440
-                        ? "588px"
-                        : screenWidth >= 1024 && screenWidth < 1440
-                          ? "479px"
-                          : undefined,
-                  }}
-                >
-                  <div className="button-15">
-                    <div className="text-16">In Progress</div>
-
-                    <div className="div-3">
-                      <Plus format="outline" weight="bold" />
-                      <DotsThreeOutline format="outline" weight="fill" />
-                    </div>
-                  </div>
-
-                  <div className="button-16">
-                    <div className="text-16">Done</div>
-
-                    <div className="div-3">
-                      <Plus format="outline" weight="bold" />
-                      <DotsThreeOutline format="outline" weight="fill" />
-                    </div>
-                  </div>
-
-                  <div className="card">
-                    <div className="header">
-                      <button className="button-7">
-                        <div className="text-17">Medium</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Organize and Lead the Team Feedback Session for Project
-                      </p>
-
-                      <p className="text-19">
-                        Schedule a meeting to gather feedback on the latest
-                        project designs.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-4">
-                          <div className="text-20">+2</div>
-                        </div>
+          {/* New Testimonials Section */}
+          <div className="testimonials-section">
+            <div className="testimonials-section-header">
+              <div className="text-37 testimonials-header-text">
+                What users
+                <br />
+                <span className="testimonials-header-gray">Say about ScopeDocs</span>
+                      </div>
+              <p className="text-25">
+                Our users success stories highlight the real value.
+                        </p>
                       </div>
 
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">2</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-2">
-                    <div className="header">
-                      <button className="button-7">
-                        <div className="text-17">Medium</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Revise and Update Marketing Campaign Assets for the
-                        Holiday
-                      </p>
-
-                      <p className="text-19">
-                        Adjust ad visuals and copy to align with the holiday
-                        campaign goals.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-5" />
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-3">
-                    <div className="header">
-                      <button className="button-8">
-                        <div className="text-21">High</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Draft a Comprehensive Blog Post on Task Management
-                        Strategies
-                      </p>
-
-                      <p className="text-19">
-                        Write a 500-word blog post offering tips for better task
-                        management.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-6" />
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">2</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-4">
-                    <div className="header">
-                      <button className="button-8">
-                        <div className="text-21">High</div>
-                      </button>
-                    </div>
-
-                    <div className="content-10">
-                      <p className="text-18">
-                        Prepare Scripts and Recruit Participants for Usability
-                        Testing
-                      </p>
-
-                      <p className="text-19">
-                        Set up user testing procedures to evaluate the app&#39;s
-                        functionality.
-                      </p>
-                    </div>
-
-                    <div className="footer-2">
-                      <div className="content-groups-3">
-                        <div className="avatar-2" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-3" />
-
-                        <div className="avatar-4">
-                          <div className="text-20">+1</div>
-                        </div>
-                      </div>
-
-                      <div className="content-groups-4">
-                        <div className="content-11">
-                          <Chat format="outline" weight="regular" />
-                          <div className="text-wrapper-12">6</div>
-                        </div>
-
-                        <div className="content-11">
-                          <Link format="outline" weight="regular" />
-                          <div className="text-wrapper-12">3</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+            <div className="testimonials-grid">
+              <NewTestimonialCard
+                quote="I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what's going to happen…because this has been really difficult for us to get LLMs to [document] this well."
+                name="Sarah T"
+                title="COO"
+                company="VectorVector"
+                avatar="/img/avatar-1.png"
+                logo={
                   <img
-                    className="software-developer-4"
-                    alt="Software developer"
-                    src="/img/software-developer-coding-on-laptop-2025-01-29-08-37-09-utc-1-1.png"
+                    src="https://cdn.simpleicons.org/asana/F06A6A"
+                    alt="Asana"
+                    style={{ height: "40px", width: "auto" }}
                   />
-                </div>
+                }
+              />
+              <NewTestimonialCard
+                quote="I've paid for a lot of project management tools, but what caught my attention was that your product was generative documentation!"
+                name="David K"
+                title="Software Development Engineer"
+                avatar="/img/avatar-2.png"
+                logo={
+                  <img
+                    src="/img/image-588254642.png"
+                    alt="Zoom"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
+              <NewTestimonialCard
+                quote="We finally have documentation that stays current. When tickets and PRs change, ScopeDocs keeps the docs aligned with reality."
+                name="Alexa R."
+                title="VP of Engineering"
+                avatar="/img/avatar-3.png"
+                logo={
+                  <img
+                    src="/img/Google_Drive_logo.png"
+                    alt="Google Drive"
+                    style={{ height: "40px", width: "auto" }}
+                  />
+                }
+              />
               </div>
             </div>
 
-            <div
-              className="content-36"
-              style={{
-                marginRight:
-                  screenWidth >= 1024 && screenWidth < 1440
-                    ? "-17.00px"
-                    : undefined,
-                width:
-                  screenWidth >= 1440
-                    ? "596px"
-                    : screenWidth >= 1024 && screenWidth < 1440
-                      ? "306px"
-                      : undefined,
-              }}
-            >
-              <div className="content-18">
-                <p className="text-42">Find Answers in Seconds, With Sources</p>
-
-                <p className="text-43">
-                  Ask a question and get a decision-ready answer backed by
-                  source links, owners, and timestamps. Every summary is
-                  traceable to the exact conversation, PR, or ticket, so teams
-                  can trust it, share it, and move faster.
-                </p>
-              </div>
-            </div>
-          </div>
         </>
       )}
 
+
       {screenWidth >= 1440 && (
         <>
-          <div className="testimonials">
-            <div className="content-30">
-              <p className="text-37">
-                What users <br />
-                Say about ScopeDocs
-              </p>
-
-              <p className="text-25">
-                Our users success stories highlight the real value
-              </p>
-            </div>
-
-            <div className="content-groups-8">
-              <div className="row-4">
-                <TestimonialCard
-                  avatarClassName="testimonial-card-2"
-                  className="instance-node-8"
-                  logo="/img/logo-3.svg"
-                  text="&#34;I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what’s going to happen…because this has been really difficult for us to get LLMs to [document] this well.”"
-                  text1="Sarah Thompson"
-                  text2="COO"
-                  version="one"
-                />
-                <TestimonialCard
-                  avatarClassName="testimonial-card-5"
-                  className="testimonial-card-8"
-                  text="&#34;I&#39;ve paid for a lot of project management tools, but what caught my attention was that your product was generative documentation!&#34;"
-                  text1="David K"
-                  text2="Software Development Engineer"
-                  vector="/img/vector-23.svg"
-                  vectorClassName="testimonial-card-3"
-                  version="eight"
-                />
-                <TestimonialCard
-                  avatarClassName="testimonial-card-7"
-                  className="testimonial-card-8"
-                  img="/img/logo-5.svg"
-                  text="We finally have documentation that stays current. When tickets and PRs change, ScopeDocs keeps the docs aligned with reality."
-                  text1="Alexa R."
-                  text2="VP of Engineering"
-                  version="three"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* PRICING SECTION - Temporarily disabled. Set SHOW_PRICING to true to re-enable. */}
           {SHOW_PRICING && (
             <div className="pricing-2">
@@ -2867,6 +1874,8 @@ export const Design = () => {
           )}
 
           <div className="FA-qs">
+            <div className="faq-grid-container">
+              <div className="faq-left-column">
             <div className="content-37">
               <div className="content-17">
                 <div className="content-18">
@@ -2888,8 +1897,10 @@ export const Design = () => {
                 text="Contact Our Team"
                 type="outlined"
               />
+                </div>
             </div>
 
+              <div className="faq-right-column">
             <div className="content-groups-9">
               <div className="faq-accordion-list">
                 {faqData.map((faq, index) => (
@@ -2936,6 +1947,8 @@ export const Design = () => {
                 ))}
               </div>
             </div>
+              </div>
+            </div>
           </div>
 
           <div className="footer-wrapper">
@@ -2951,192 +1964,6 @@ export const Design = () => {
 
       {screenWidth >= 1024 && screenWidth < 1440 && (
         <>
-          <div className="v-4">
-            <div className="frame-22">
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178-2.png"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Microsoft Teams</div>
-
-                  <div className="text-wrapper-17">Collaboration Platform</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-4" />
-
-                  <img
-                    className="image-3"
-                    alt="Image"
-                    src="/img/image-588254642.png"
-                  />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Zoom</div>
-
-                  <div className="text-wrapper-17">Video Conferencing</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Slack className="slack-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Slack</div>
-
-                  <div className="text-wrapper-17">Software Type</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <SocialIcons1 className="social-icons" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Github</div>
-
-                  <div className="text-wrapper-17">Development Platform</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="frame-23">
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <NotionWrapper />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Notion</div>
-
-                  <div className="text-wrapper-17">Note-taking App</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <JiraCore2
-                    className="jira-core-5"
-                    color="url(#paint0_linear_117351_13904)"
-                  />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Jira</div>
-
-                  <div className="text-wrapper-17">Note-taking App</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-5" />
-
-                  <Notion1 className="notion-1" />
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Notion</div>
-
-                  <div className="text-wrapper-17">Note-taking App</div>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <img
-                  className="frame-14"
-                  alt="Frame"
-                  src="/img/frame-427322178-6.svg"
-                />
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Google Drive</div>
-
-                  <p className="text-wrapper-17">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <div className="dropbox-2">
-                    <div className="bg" />
-
-                    <img
-                      className="dropbox-4"
-                      alt="Dropbox"
-                      src="/img/dropbox.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Dropbox</div>
-
-                  <p className="text-wrapper-17">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-
-              <div className="frame-13">
-                <div className="frame-14">
-                  <div className="ellipse-6" />
-
-                  <div className="dropbox-2">
-                    <div className="bg" />
-
-                    <img
-                      className="dropbox-4"
-                      alt="Dropbox"
-                      src="/img/dropbox-5.png"
-                    />
-                  </div>
-                </div>
-
-                <div className="frame-15">
-                  <div className="text-wrapper-16">Dropbox</div>
-
-                  <p className="text-wrapper-17">
-                    Cloud storage and File Sharing
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="content-38">
-              <div className="text-37">
-                Works with the tools
-                <br />
-                you already use
-              </div>
-              <p className="text-25">
-                Sync your stack in minutes, turn PRs, tickets, and threads into living docs
-              </p>
-            </div>
-          </div>
-
           {/* PRICING SECTION - Temporarily disabled. Set SHOW_PRICING to true to re-enable. */}
           {SHOW_PRICING && (
             <div className="pricing-2">
@@ -3343,8 +2170,8 @@ export const Design = () => {
                 avatarClassName="testimonial-card-2"
                 className="testimonial-card-9"
                 logo="/img/logo-8.svg"
-                text="&#34;I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what’s going to happen…because this has been really difficult for us to get LLMs to [document] this well.”"
-                text1="Sarah Thompson"
+                text="&#34;I love the idea of all these systems being monitored, brought together, and getting a cohesive idea of what's going to happen…because this has been really difficult for us to get LLMs to [document] this well.&#34;"
+                text1="Sarah T"
                 text2="COO"
                 version="one"
               />
@@ -3372,6 +2199,8 @@ export const Design = () => {
           </div>
 
           <div className="FA-qs-2">
+            <div className="faq-grid-container">
+              <div className="faq-left-column">
             <div className="content-37">
               <div className="content-17">
                 <div className="content-18">
@@ -3393,8 +2222,10 @@ export const Design = () => {
                 text="Contact Our Team"
                 type="outlined"
               />
+                </div>
             </div>
 
+              <div className="faq-right-column">
             <div className="content-groups-10">
               <div className="faq-accordion-list">
                 {faqData.map((faq, index) => (
@@ -3438,6 +2269,8 @@ export const Design = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,122 @@
+.tool-card {
+  align-items: flex-start;
+  background-color: #0f0f0f;
+  border: 1px solid;
+  border-color: #3b3b3b3d;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .tool-card {
+    padding: clamp(16px, 3vw, 20px) !important;
+    gap: clamp(12px, 2vw, 16px) !important;
+    max-width: clamp(280px, 75vw, 320px) !important;
+    margin: 0 auto !important;
+  }
+  
+  .tool-card-logo {
+    height: 32px !important;
+  }
+  
+  .tool-card-logo img,
+  .tool-card-logo svg {
+    height: 32px !important;
+  }
+  
+  .tool-card-logo img[alt="Asana"] {
+    height: 32px !important;
+  }
+  
+  .tool-card-name {
+    font-size: clamp(14px, 3.5vw, 16px) !important;
+    line-height: clamp(20px, 4.5vw, 22px) !important;
+  }
+  
+  .tool-card-category {
+    font-size: clamp(12px, 3vw, 14px) !important;
+    line-height: clamp(18px, 4vw, 20px) !important;
+  }
+}
+
+.tool-card:hover {
+  border-color: #3b3b3b66;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tool-card-logo {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  min-height: 40px;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+
+.tool-card-logo img,
+.tool-card-logo svg {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* Microsoft Teams logo - official brand color #6264A7 */
+.tool-card-logo img[alt="Microsoft Teams"] {
+  height: 40px !important;
+}
+
+/* Asana logo - no special styling needed */
+.tool-card-logo img[alt="Asana"] {
+  height: 40px !important;
+}
+
+.tool-card-logo svg {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  margin: 0 !important;
+}
+
+.tool-card-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.tool-card-name {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Figtree", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+}
+
+.tool-card-category {
+  align-self: stretch;
+  color: #b3b3b3;
+  font-family: "Figtree", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: relative;
+}
