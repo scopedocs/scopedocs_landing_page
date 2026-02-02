@@ -421,7 +421,7 @@ export const Design = () => {
                   }
                   iconContainerClassName="why-choose-us-card-2"
                   text="Automated Documentation"
-                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
+                  text1="Connect Slack, GitHub PRs, and Linear tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -513,7 +513,7 @@ export const Design = () => {
               />
               <ToolCard
                 logo={<JiraCore2 className="jira-tool-icon" />}
-                toolName="Jira"
+                toolName="Linear"
                 category="Work Management Platform"
               />
               <ToolCard
@@ -564,7 +564,7 @@ export const Design = () => {
               <BlogCard
                 imageUrl="/img/coding.png"
                 title="Keeping docs up to date as code changes"
-                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Linear tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
                 meta="5 min read"
               />
               <BlogCard
@@ -1118,7 +1118,7 @@ export const Design = () => {
                   }
                   iconContainerClassName="why-choose-us-card-2"
                   text="Automated Documentation"
-                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
+                  text1="Connect Slack, GitHub PRs, and Linear tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -1211,7 +1211,7 @@ export const Design = () => {
               />
               <ToolCard
                 logo={<JiraCore2 className="jira-tool-icon" />}
-                toolName="Jira"
+                toolName="Linear"
                 category="Work Management Platform"
               />
               <ToolCard
@@ -1262,7 +1262,7 @@ export const Design = () => {
               <BlogCard
                 imageUrl="/img/coding.png"
                 title="Keeping docs up to date as code changes"
-                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Linear tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
                 meta="5 min read"
               />
               <BlogCard
@@ -1431,7 +1431,7 @@ export const Design = () => {
                   }
                   iconContainerClassName="why-choose-us-card-2"
                   text="Automated Documentation"
-                  text1="Connect Slack, GitHub PRs, and Jira tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
+                  text1="Connect Slack, GitHub PRs, and Linear tickets to eliminate manual wiki updates. ScopeDocs syncs with your code changes in real-time to create a single source of truth for your engineering team, ensuring no detail is lost as you ship"
                   version="one"
                 />
                 <WhyChooseUsCard
@@ -1524,7 +1524,7 @@ export const Design = () => {
               />
               <ToolCard
                 logo={<JiraCore2 className="jira-tool-icon" />}
-                toolName="Jira"
+                toolName="Linear"
                 category="Work Management Platform"
               />
               <ToolCard
@@ -1575,7 +1575,7 @@ export const Design = () => {
               <BlogCard
                 imageUrl="/img/coding.png"
                 title="Keeping docs up to date as code changes"
-                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Jira tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
+                description="Stop your technical docs from falling behind. Learn an automated developer workflow using GitHub PRs and Linear tickets to keep internal documentation current. Improve developer onboarding and ensure technical decisions are never lost"
                 meta="5 min read"
               />
               <BlogCard
